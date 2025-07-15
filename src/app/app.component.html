@@ -1,0 +1,67 @@
+<div class="banner-background">
+  <div class="container">
+    <header class="hero-section">
+      <img src="assets/profile.jpg" alt="Foto Perfil - Alana Maiumy" class="profile-pic">
+
+      <div class="title-container">
+        <span class="greeting">Hello world! Meu nome é Alana Maiumy e eu sou</span>
+        <h1>Desenvolvedora Front-end ✨</h1>
+        <div class="line"></div>
+      </div>
+
+      <p class="description">
+        Gosto de construir soluções que façam a diferença e estou sempre buscando aprender o que for preciso para ir além 💕
+      </p>
+
+      <ul class="tech-list">
+        <li *ngFor="let tech of technologies" [ngStyle]="{'color': tech.color}">
+          <i [class]="tech.iconClass"></i>
+          <span>{{ tech.name }}</span>
+        </li>
+      </ul>
+    </header>
+
+    <main class="projects-section">
+      <div class="projects-header">
+        <h2>Meu trabalho</h2>
+        <p>Estes são alguns dos meus projetos pessoais e acadêmicos</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" *ngFor="let project of projects" (click)="openModal(project)">
+          <div class="card-content">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-backdrop" *ngIf="selectedProject" (click)="closeModal()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+          <button class="close-button" (click)="closeModal()">×</button>
+
+          <h3>{{ selectedProject.title }}</h3>
+          <p>{{ selectedProject.description }}</p>
+
+          <div class="preview-container">
+            <img 
+              [src]="selectedProject.previewImage" 
+              alt="Prévia do {{ selectedProject.title }}" 
+              (click)="goToLinks()"
+              title="Clique para acessar o site e GitHub"
+            />
+          </div>
+
+          <div class="links">
+            <a [href]="selectedProject.siteUrl" target="_blank" rel="noopener noreferrer">Ver Site</a>
+            <a [href]="selectedProject.githubUrl" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="site-footer">
+      <p>Atualizado em julho de 2025 • Feito com Angular, TypeScript e SCSS</p>
+    </footer>
+  </div>
+</div>
