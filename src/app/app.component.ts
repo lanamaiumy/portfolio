@@ -22,12 +22,16 @@ export class AppComponent {
   projects = [
      {
       title: 'UTF-HUB',
-      description: 'A ideia central da aplicação é simular uma plataforma acadêmica digital que ajude calouros com a adaptação ao ambiente universitário.',
+      description: 'A ideia central da aplicação é simular uma plataforma acadêmica digital que ajude calouros com a adaptação ao ambiente universitário',
       previewImage: '../assets/tela-utfhub.png',
       siteUrl: 'https://utf-hub.netlify.app/',
       githubUrl: 'https://github.com/lanamaiumy/utf-hub/tree/main'
     },
-    { title: 'EM BREVE', description: 'logo logo postarei mais projetos ;)'},
+    { title: 'Sabedoria Ativa',
+      description: 'Uma aplicação web desenvolvida para ajudar centros comunitários, ONGs e prefeituras a divulgarem atividades voltadas à terceira idade',
+      previewImage: '',
+      siteUrl: '',
+      githubUrl: 'https://github.com/lanamaiumy/sabedoriaativa'},
     { title: '---', description: '-'},
     { title: '---', description: '-'},
     { title: '---', description: '-'},
