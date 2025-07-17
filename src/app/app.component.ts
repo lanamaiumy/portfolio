@@ -32,7 +32,7 @@ export class AppComponent {
       previewImage: '',
       siteUrl: '',
       githubUrl: 'https://github.com/lanamaiumy/sabedoriaativa'},
-    { title: '---', description: '-'},
+    { title: 'EM BREVE', description: 'logo logo postarei mais projetos :)'},
     { title: '---', description: '-'},
     { title: '---', description: '-'},
     { title: '---', description: '-'}
