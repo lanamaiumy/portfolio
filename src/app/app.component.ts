@@ -21,17 +21,17 @@ export class AppComponent {
 
   projects = [
      {
-      title: 'teste',
-      description: 'teste',
-      previewImage: 'teste',
-      siteUrl: 'teste',
-      githubUrl: 'teste'
+      title: 'UTF-HUB',
+      description: 'A ideia central da aplicação é simular uma plataforma acadêmica digital que ajude calouros com a adaptação ao ambiente universitário.',
+      previewImage: '../assets/tela-utfhub.png',
+      siteUrl: 'https://utf-hub.netlify.app/',
+      githubUrl: 'https://github.com/lanamaiumy/utf-hub/tree/main'
     },
-    { title: 'teste', description: 'testetesteteste' },
-    { title: 'teste', description: 'testetesteteste' },
-    { title: 'teste', description: 'testetesteteste' },
-    { title: 'teste', description: 'testetesteteste' },
-    { title: 'teste', description: 'testetesteteste' }
+    { title: 'EM BREVE', description: 'logo logo postarei mais projetos ;)'},
+    { title: '---', description: '-'},
+    { title: '---', description: '-'},
+    { title: '---', description: '-'},
+    { title: '---', description: '-'}
   ];
 
   selectedProject: any = null;
