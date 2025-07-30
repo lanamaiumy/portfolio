@@ -164,7 +164,6 @@
   width: 90%;
   position: relative;
   color: var(--primary-text-color);
-  box-shadow: 0 0 15px rgb(100,	181,	246, 0.4);
 
   h3 {
     margin-top: 0;
@@ -183,14 +182,15 @@
       transition: transform 0.2s ease-in-out;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.01);
       }
     }
   }
 
   .links a {
     background-color: var(--highlight-color);
-    color: #16181d;
+    margin-right: 20px;
+    color: #ffffff;
     padding: 10px 16px;
     border-radius: 6px;
     font-weight: 600;
@@ -198,7 +198,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
 }

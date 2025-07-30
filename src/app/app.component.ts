@@ -18,6 +18,12 @@ export class AppComponent {
   ];
 
   projects = [
+     { 
+      title: 'DevLink',
+      description: 'Hub centralizado para organizar e compartilhar recursos úteis para estudantes e profissionais da área de tecnologia com visualização de conteúdos categorizados',
+      previewImage: '../assets/tela-devlink.jpeg',
+      siteUrl: 'https://devlinkhub.netlify.app/',
+      githubUrl: 'https://github.com/lanamaiumy/devlink'},
      {
       title: 'UTF-HUB',
       description: 'A ideia central da aplicação é simular uma plataforma acadêmica digital que ajude calouros com a adaptação ao ambiente universitário',
@@ -30,11 +36,6 @@ export class AppComponent {
       previewImage: '',
       siteUrl: '',
       githubUrl: 'https://github.com/lanamaiumy/sabedoriaativa'},
-    { title: 'DevLink',
-      description: 'Hub de links para organizar e compartilhar referências úteis entre desenvolvedores',
-      previewImage: '../assets/tela-devlink.jpeg',
-      siteUrl: 'https://devlinkhub.netlify.app/',
-      githubUrl: 'https://github.com/lanamaiumy/devlink'},
     { title: 'EM BREVE', description: 'logo logo postarei mais projetos :)'},
     { title: '---', description: '-'},
     { title: '---', description: '-'}
