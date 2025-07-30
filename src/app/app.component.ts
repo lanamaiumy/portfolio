@@ -30,8 +30,12 @@ export class AppComponent {
       previewImage: '',
       siteUrl: '',
       githubUrl: 'https://github.com/lanamaiumy/sabedoriaativa'},
+    { title: 'DevLink',
+      description: 'Hub de links para organizar e compartilhar referências úteis entre desenvolvedores',
+      previewImage: '../assets/tela-devlink.jpeg',
+      siteUrl: 'https://devlinkhub.netlify.app/',
+      githubUrl: 'https://github.com/lanamaiumy/devlink'},
     { title: 'EM BREVE', description: 'logo logo postarei mais projetos :)'},
-    { title: '---', description: '-'},
     { title: '---', description: '-'},
     { title: '---', description: '-'}
   ];
